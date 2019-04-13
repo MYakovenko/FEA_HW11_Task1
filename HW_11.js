@@ -40,7 +40,8 @@ var style = document.head.appendChild(document.createElement('style'))
 style.innerText = `
     img {
         height: 100px;
-        padding: 10px 20px;
+        padding: 10px;
+        margin: 10px 20px;
         border: solid 2px #008080;
     }
 `
