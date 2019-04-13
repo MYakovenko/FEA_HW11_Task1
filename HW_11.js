@@ -32,8 +32,8 @@ getPictures("cities.json").then(
     responce => JSON.parse(responce).forEach(
         picture => {
             var div = document.body.appendChild(document.createElement("div"))
-            document.div.appendChild(document.createElement("img")).src = picture.ref
-            document.div.appendChild(document.createElement("p")).innerText = picture.title
+            div.appendChild(document.createElement("img")).src = picture.ref
+            div.appendChild(document.createElement("p")).innerText = picture.title
         }
     )
 )
