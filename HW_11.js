@@ -43,3 +43,4 @@ style.innerText = `
         padding: 10px 20px;
         border: solid 2px #008080;
     }
+`
