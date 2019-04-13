@@ -31,7 +31,7 @@ function getPictures (url) {
 getPictures("cities.json").then(
     responce => JSON.parse(responce).forEach(
         picture => document.body.appendChild(
-            document.createElement("img").src = picture.ref
-        )
+            document.createElement("img")
+        ).src = picture.ref
     )
 )
