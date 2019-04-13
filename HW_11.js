@@ -33,7 +33,7 @@ getPictures("cities.json").then(
         picture => {
             var div = document.body.appendChild(document.createElement("div"))
             div.appendChild(document.createElement("img")).src = picture.ref
-            div.appendChild(document.createElement("p")).innerText = picture.title
+            div.appendChild(document.createElement("span")).innerText = picture.title
         }
     )
 )
@@ -41,7 +41,7 @@ getPictures("cities.json").then(
 var style = document.head.appendChild(document.createElement('style'))
 style.innerText = `
     div {
-        margin: 20px;
+        margin-bottom: 30px;
     }
     img {
         height: 200px;
@@ -49,7 +49,8 @@ style.innerText = `
         border: solid 2px #008080;
     }
 
-    p {
+    span {
+        display: block;
         color: #008080;
     }
 `
