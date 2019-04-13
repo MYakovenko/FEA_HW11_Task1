@@ -41,7 +41,7 @@ getPictures("cities.json").then(
 var style = document.head.appendChild(document.createElement('style'))
 style.innerText = `
     div {
-        margin: 10px 20px;
+        margin: 20px;
     }
     img {
         height: 200px;
