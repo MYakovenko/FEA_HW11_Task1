@@ -29,5 +29,5 @@ function getPictures (url) {
 }
 
 getPictures("cities.json").then(
-    responce => console.log(responce)
+    responce => JSON.parse(responce)
 )
