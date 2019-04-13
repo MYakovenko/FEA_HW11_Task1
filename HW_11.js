@@ -11,19 +11,23 @@ ref - ссылка на картинку
 Распарсить данные в массив
 Вывести на страницу картинки и подписи к ним*/
 
-const promise = new Promise(
-    function (resolve) {
-        const request = new XMLHttpRequest
-        request.open("GET", "cities.json")
+function getPictures (url) {
+    return new Promise(
+        function (resolve) {
+            const request = new XMLHttpRequest
+            request.open("GET", url)
 
-        request.onreadystatechange = function (event) {
-            event.target.readyState === 4 && event.target.status === 200 ? 
-                resolve(event.target.responceText) : console.warn("Error")
+            request.onreadystatechange = function (event) {
+                event.target.readyState === 4 ? 
+                    event.target.status === 200 ? 
+                    resolve ( event.target.responseText ) : 
+                        reject ( event.target.statusText ) : null
+            }
+            request.send()
         }
-        request.send()
-    }
-)
+    )
+}
 
-var x = promise.then(
+getPictures("cities.json").then(
     responce => console.log(responce)
 )
