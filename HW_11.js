@@ -18,14 +18,12 @@ const promise = new Promise(
 
         request.onreadystatechange = function (event) {
             event.target.readyState === 4 && event.target.status === 200 ? 
-                resolve(event.target.responceText) : null
+                resolve(event.target.responceText) : console.warn("Error")
         }
         request.send()
     }
 )
 
 var x = promise.then(
-    responce => JSON.parse(responce)
+    responce => console.log(responce)
 )
-
-console.log(x)
