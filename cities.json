@@ -1,26 +1,22 @@
 [
     {
        "title": "Singapore",
-       "ref" : "https://www.icytales.com/wp-content/uploads/2016/12/150806121501-sg-50-lead-image-exlarge-169.jpg"
+       "ref" : "https://cdn.cnn.com/cnnnext/dam/assets/150806121501-sg-50---lead-image-super-169.jpg"
     },
     {
        "title": "Seoul",
-       "ref" : "https://www.icytales.com/wp-content/uploads/2016/12/seoul.png"
+       "ref" : "https://www.accessmba.com/application/public/cache/event-seoul-620x370.jpg"
     },
     {
        "title": "Amsterdam",
-       "ref" : "https://www.icytales.com/wp-content/uploads/2016/12/amsterdam_canals_-_july_2006_1421389537.jpg"
-    },
-    {
-       "title": "Brasilla",
-       "ref" : "https://www.icytales.com/wp-content/uploads/2016/12/brasilla_1421323649.jpg"
+       "ref" : "https://cdn.flixbus.de/2017-11/amsterdam-header.jpg"
     },
     {
        "title": "Paris",
-       "ref" : "https://www.icytales.com/wp-content/uploads/2016/12/paris_1421386835.jpg"
+       "ref" : "http://www.goawayparis.com/wp-content/uploads/cache-1a0bf496c2aa0055c296f0f3a7cf3fe8/2013/07/Eiffel-Tower-Paris-France-Autumn.jpg"
     },
     {
        "title": "Montreal",
-       "ref" : "https://www.icytales.com/wp-content/uploads/2016/12/7327038a-4b26-4fa8-8cbf-c58296a533fd.jpg"
+       "ref" : "https://media-cdn.tripadvisor.com/media/photo-s/03/9b/2f/df/montreal.jpg"
     }
 ]
