@@ -30,18 +30,26 @@ function getPictures (url) {
 
 getPictures("cities.json").then(
     responce => JSON.parse(responce).forEach(
-        picture => document.body.appendChild(
-            document.createElement("img")
-        ).src = picture.ref
+        picture => {
+            document.body.appendChild(document.createElement("div"))
+            document.div.appendChild(document.createElement("img")).src = picture.ref
+            document.div.appendChild(document.createElement("p")).innerText = picture.title
+        }
     )
 )
 
 var style = document.head.appendChild(document.createElement('style'))
 style.innerText = `
-    img {
-        height: 100px;
-        padding: 10px;
-        margin: 10px 20px;
+    div {
         border: solid 2px #008080;
+        margin: 10px 20px;
+    }
+    img {
+        height: 200px;
+        padding: 10px;
+    }
+
+    p {
+        color: #008080;
     }
 `
